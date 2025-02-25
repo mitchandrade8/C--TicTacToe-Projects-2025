@@ -27,7 +27,10 @@ int main() {
 
     while (running) {
         playerMove(spaces, player);
-        drawBoard(spaces); // reflect changes!
+        drawBoard(spaces); // update to show the players move
+
+        computerMove(spaces, computer);
+        drawBoard(spaces); // update to show the computers move
     }
 
     return 0;
