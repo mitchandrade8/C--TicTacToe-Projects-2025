@@ -37,6 +37,9 @@ void drawBoard(char *spaces) {
     cout << "     |     |     " << endl;
     cout << "  " << spaces[3] << "  |  " << spaces[4] << "  |  " << spaces[5] << "  " << endl;
     cout << "_____|_____|_____" << endl;
+    cout << "     |     |     " << endl;
+    cout << "  " << spaces[6] << "  |  " << spaces[7] << "  |  " << spaces[8] << "  " << endl;
+    cout << "     |     |     " << endl;
 }
 
 void playerMove(char *spaces, char player) {
@@ -49,8 +52,10 @@ void computerMove(char *spaces, char computer) {
 
 bool checkWinner(char *spaces, char player, char computer) {
 
+    return true;
 }
 
 bool checkTie(char *spaces) {
 
+    return true;
 }
