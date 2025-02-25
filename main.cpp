@@ -15,7 +15,15 @@ bool checkTie(char *spaces);
 
 // MARK: - MAIN FUNCTION
 int main() {
+    char spaces[9] = {  ' ', ' ', ' ',
+                        ' ', ' ', ' ',
+                        ' ', ' ', ' ',
+                    };
+    char player = 'X';
+    char computer = 'O';
+    bool running = true;
 
+    drawBoard(spaces);
 
     return 0;
 }
@@ -23,7 +31,9 @@ int main() {
 // MARK: -
 
 void drawBoard(char *spaces) {
-
+    cout << "     |     |     " << endl;
+    cout << "   " << spaces[0] << "  |  " << spaces[1] << "   |   " << spaces[2] << "  " << endl;
+    cout << "_____|_____|_____" << endl;
 }
 
 void playerMove(char *spaces, char player) {
@@ -39,5 +49,5 @@ bool checkWinner(char *spaces, char player, char computer) {
 }
 
 bool checkTie(char *spaces) {
-    
+
 }
