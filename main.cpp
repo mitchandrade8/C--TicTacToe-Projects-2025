@@ -34,6 +34,9 @@ void drawBoard(char *spaces) {
     cout << "     |     |     " << endl;
     cout << "  " << spaces[0] << "  |  " << spaces[1] << "  |  " << spaces[2] << "  " << endl;
     cout << "_____|_____|_____" << endl;
+    cout << "     |     |     " << endl;
+    cout << "  " << spaces[3] << "  |  " << spaces[4] << "  |  " << spaces[5] << "  " << endl;
+    cout << "_____|_____|_____" << endl;
 }
 
 void playerMove(char *spaces, char player) {
