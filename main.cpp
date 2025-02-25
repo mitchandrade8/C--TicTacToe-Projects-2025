@@ -86,10 +86,10 @@ void computerMove(char *spaces, char computer) {
 
 bool checkWinner(char *spaces, char player, char computer) {
 
-    if (spaces[0] == spaces[1] && spaces[1] == spaces[2]) {
+    if (spaces[0] != ' ' && spaces[0] == spaces[1] && spaces[1] == spaces[2]) {
         spaces[0] == player ? cout << "YOU WIN!\n" : cout << "YOU LOSE!\n";
     }
-    
+
 
     return true;
 }
