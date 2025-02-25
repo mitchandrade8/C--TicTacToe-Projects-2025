@@ -28,8 +28,17 @@ int main() {
     while (running) {
         playerMove(spaces, player);
         drawBoard(spaces);              // update to show the players move
+        if (checkWinner(spaces, player, computer)) {
+            running = false;
+            break;
+        }
+
         computerMove(spaces, computer);
         drawBoard(spaces);              // update to show the computers move
+        if (checkWinner(spaces, player, computer)) {
+            running = false;
+            break;
+        }
     }
 
     return 0;
@@ -76,6 +85,11 @@ void computerMove(char *spaces, char computer) {
 }
 
 bool checkWinner(char *spaces, char player, char computer) {
+
+    if (spaces[0] == spaces[1] && spaces[1] == spaces[2]) {
+        spaces[0] == player ? cout << "YOU WIN!\n" : cout << "YOU LOSE!\n";
+    }
+    
 
     return true;
 }
