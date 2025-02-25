@@ -32,7 +32,7 @@ int main() {
 
 void drawBoard(char *spaces) {
     cout << "     |     |     " << endl;
-    cout << "   " << spaces[0] << "  |  " << spaces[1] << "   |   " << spaces[2] << "  " << endl;
+    cout << "  " << spaces[0] << "  |  " << spaces[1] << "  |  " << spaces[2] << "  " << endl;
     cout << "_____|_____|_____" << endl;
 }
 
