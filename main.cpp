@@ -27,10 +27,9 @@ int main() {
 
     while (running) {
         playerMove(spaces, player);
-        drawBoard(spaces); // update to show the players move
-
+        drawBoard(spaces);              // update to show the players move
         computerMove(spaces, computer);
-        drawBoard(spaces); // update to show the computers move
+        drawBoard(spaces);              // update to show the computers move
     }
 
     return 0;
@@ -53,7 +52,7 @@ void drawBoard(char *spaces) {
 void playerMove(char *spaces, char player) {
     int number;
     do {
-        cout << "Enter a spot to place a marker (1 - 9)" << endl;
+        cout << "Enter a spot to place a marker (1 - 9) : ";
         cin >> number;
         number--; 
         if (spaces[number] == ' ') {
@@ -64,7 +63,16 @@ void playerMove(char *spaces, char player) {
 }
 
 void computerMove(char *spaces, char computer) {
+    int number;
+    srand(time(0));
 
+    while (true) {
+        number = rand() % 9;            // random number from 0 - 8
+        if (spaces[number] == ' ') {    // Check to make sure the number is a empty space on the board
+            spaces[number] = computer;
+            break;
+        }
+    }
 }
 
 bool checkWinner(char *spaces, char player, char computer) {
