@@ -53,7 +53,7 @@ int main() {
     return 0;
 }
 
-// MARK: -
+// MARK: - FUNCTIONS
 
 void drawBoard(char *spaces) {
     cout << "     |     |     " << endl;
