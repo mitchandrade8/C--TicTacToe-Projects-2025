@@ -8,4 +8,5 @@ Created a simple Tic Tac Toe game in C++
   
 <img width="224" alt="TTTP1" src="https://github.com/user-attachments/assets/123471c0-8d7b-4e5d-a0dc-f0017516ccce" />
 
-Add the current terminal visual for the start of a new game and the result when the game ends in either 'Win/Lose' or 'TIE'
+- Added the current terminal visual for the start of a new game.
+- the result states when the game ends in either 'Win/Lose' or 'TIE'
